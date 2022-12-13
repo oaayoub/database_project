@@ -18,7 +18,7 @@ router.get('/' , async (req, res) => {
         //post to the db .. check if there violation 
         // return post status
 
-        res.render('table');
+        res.render('result');
    
     
 });
