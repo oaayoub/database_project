@@ -8,6 +8,17 @@ app.get('/',(req,res)=>{
     res.render('Train');
 });
 
+app.use(express.json());//middleware to convert req.body m to json
+
+const train = require('/routes/train');
+const employee = require('/routes/employee');
+const station = require('/routes/station');
+const ticket = require('/routes/ticket');
+
+app.use('/train', train);
+app.use('/employee', employee);
+app.use('/station', station);
+app.use('/ticket', ticket);
 
 const port =  process.env.PORT || 3000;
 app.listen(port, console.log("LISTENING ON PORT : ",port));
