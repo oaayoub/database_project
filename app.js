@@ -16,7 +16,7 @@ const station = require('./routes/station');
 const ticket = require('./routes/ticket');
 
 app.use('/train', train);
-app.use('/employee', e/mployee);
+app.use('/employee', employee);
 app.use('/station', station);
 app.use('/ticket', ticket);
 
