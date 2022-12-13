@@ -5,7 +5,7 @@ router.use(express.json());
 router.get('/' , async (req, res) => {
         console.log("result  page requested");
         console.log("req.query : ", req.query);
-        res.render('Employee');
+        res.render('table');
    
     
 });
