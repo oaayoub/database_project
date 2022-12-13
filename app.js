@@ -11,12 +11,14 @@ app.get('/',(req,res)=>{
 app.use(express.json());//middleware to convert req.body m to json
 
 const train = require('./routes/train');
+const result = require('./routes/result');
 const employee = require('./routes/employee');
 const station = require('./routes/station');
 const ticket = require('./routes/ticket');
 
 app.use('/train', train);
 app.use('/employee', employee);
+app.use('/result', result);
 app.use('/station', station);
 app.use('/ticket', ticket);
 
