@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<h3>Contact Form</h3>
+
+<div class="container">
+  
+  <div class="topnav">
+    <a href="#Train">Train</a>
+    <a href="#news">Employee</a>
+    <a href="#contact">Station</a>
+    <a href="#about">Ticket</a>
+  </div>
+  <p></p>
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="table">Table</label>
+    <select id="table" name="table">
+      <option value="train">Train</option>
+      <option value="employee">Employee</option>
+      <option value="station">Station</option>
+      <option value="ticket">Ticket</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    
+  <p>&nbsp;</p>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
