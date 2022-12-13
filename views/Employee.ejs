@@ -1,49 +1,42 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="main.css">
-</head>
-<body>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <h3>وزارة النقل و التضامن و محبين محمد الحاج</h3>
 
-<h3>وزارة النقل و التضامن و محبين محمد الحاج</h3>
+    <div class="container">
+      <div class="topnav">
+        <a href="/train">Train</a>
+        <a href="/employee">Employee</a>
+        <a href="/station">Station</a>
+        <a href="/ticket">Ticket</a>
+      </div>
+      <p></p>
+      <form action="/result_table">
+        <label for="train_id">Train ID *</label>
+        <input type="text" id="train_id" name="train_id" placeholder="221B" />
+        <label for="direction">Direction</label>
+        <input type="text" id="direction" name="direction" placeholder="عتبه" />
+        <label for="capacity">Capacity</label>
+        <input type="text" id="capacity" name="capacity" placeholder="450" />
+        <label for="manufacture">Manufacture</label>
+        <input type="text" id="manufacture" name="manufacture" placeholder="Integral Coach Factory" />
 
-<div class="container">
-  
-  <div class="topnav">
-    <a href="/train">Train</a>
-    <a href="/employee">Employee</a>
-    <a href="/station">Station</a>
-    <a href="/ticket">Ticket</a>
-  </div>
-  <p></p>
-  <form action="/action_page.php">
-    <label for="train_id">Train ID *</label>
-    <input type="text" id="train_id" name="train_id" placeholder="221B">
-    <label for="direction">Direction</label>
-    <input type="text" id="direction" name="direction" placeholder="عتبه">
-    <label for="capacity">Capacity</label>
-    <input type="text" id="capacity" name="capacity" placeholder="450">
-    <label for="manufacture">Manufacture</label>
-    <input type="text" id="manufacture" name="manufacture" placeholder="Integral Coach Factory">
+        <label for="line">Line</label>
+        <input type="text" id="line" name="line" placeholder="1" />
 
-    <label for="line">Line</label>
-    <input type="text" id="line" name="line" placeholder="1">
+        <div class="radio-toolbar">
+          <input type="radio" id="radioPost" name="radioFruit" value="apple" checked />
+          <label for="radioPost">Post</label>
 
-<div class="radio-toolbar">
-      <input type="radio" id="radioPost" name="radioFruit" value="apple" checked>
-      <label for="radioPost">Post</label>
-  
-      <input type="radio" id="radioReq" name="radioFruit" value="banana">
-      <label for="radioReq">Query</label>
-  
-  
-  
-  </div>
-    <input type="submit" value="GO">
-
+          <input type="radio" id="radioReq" name="radioFruit" value="banana" />
+          <label for="radioReq">Query</label>
+        </div>
+        <input type="submit" value="GO" />
       </form>
-</div>
-
-</body>
+    </div>
+  </body>
 </html>
