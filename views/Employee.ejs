@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <h3>وزارة النقل و التضامن و محبين محمد الحاج</h3>
+    <h1>Employee</h1>
 
     <div class="container">
       <div class="topnav">
@@ -16,27 +16,56 @@
       </div>
       <p></p>
       <form action="/result">
-        <label for="train_id">Train ID *</label>
-        <input type="text" id="train_id" name="train_id" placeholder="221B" />
-        <label for="direction">Direction</label>
-        <input type="text" id="direction" name="direction" placeholder="عتبه" />
-        <label for="capacity">Capacity</label>
-        <input type="text" id="capacity" name="capacity" placeholder="450" />
-        <label for="manufacture">Manufacture</label>
-        <input type="text" id="manufacture" name="manufacture" placeholder="Integral Coach Factory" />
+        <input type="text" id="table" name="table" value="Employee" readonly>
 
-        <label for="line">Line</label>
-        <input type="text" id="line" name="line" placeholder="1" />
+        <label for="id">ID *</label>
+        <input type="text" id="id" name="id" placeholder="e.g. 1900804" />
+        
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Full Name" />
+        
+        <label for="email">email</label>
+        <input type="text" id="email" name="email" placeholder="Example@gmail.com" />
+        
+        <label for="salary">Salary</label>
+        <input type="text" id="salary" name="salary" placeholder="e.g. 500" />
 
-        <div class="radio-toolbar">
-          <input type="radio" id="radioPost" name="radioFruit" value="apple" checked />
-          <label for="radioPost">Post</label>
+        <label for="address">address</label>
+        <input type="text" id="address" name="address" placeholder="1 Neighborhood Lane, Mickey's Toontown" />
+        
+        <label for="birthdate">birthdate</label>
+        <input type="text" id="birthdate" name="birthdate" placeholder="DD/MM/YY" />
 
-          <input type="radio" id="radioReq" name="radioFruit" value="banana" />
+        <div class="radio-toolbar"  id="query">
+          <input type="radio" id="radioReq" name="req_type" value="query" />
           <label for="radioReq">Query</label>
+
+        </div>
+        <div class="radio-toolbar" id="post">
+
+
+          <input type="radio" id="radioInsert" name="req_type" value="insert" checked />
+          <label for="radioInsert">Insert</label>
+
+          <input type="radio" id="radioDelete" name="req_type" value="Delete" />
+          <label for="radioDelete">Delete</label>
+
+          <input type="radio" id="radioModify" name="req_type" value="Modify" />
+          <label for="radioModify">Modify</label>
+
+</div>
         </div>
         <input type="submit" value="GO" />
       </form>
+    </div>
+
+    <div class="bottom-nav">
+      <a href="/Janitor">Janitor</a>
+      <a href="/outEmp">outEmp</a>
+      <a href="/phone">phone</a>
+      <a href="/TicketMan">TicketMan</a>
+      <a href="/stationEmp">stationEmp</a>
+      <a href="/stopBy">stopBy</a>
     </div>
   </body>
 </html>

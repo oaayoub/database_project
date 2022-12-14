@@ -3,8 +3,8 @@ const router = express.Router();
 router.use(express.json());
 
 router.get('/' , async (req, res) => {
-        console.log("tickets page requested");
-        res.render('Ticket');
+        console.log("stopBy page requested");
+        res.render('StopBy');
    
     
 });

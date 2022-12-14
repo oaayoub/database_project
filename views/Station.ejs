@@ -1,43 +1,63 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="main.css">
-</head>
-<body>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <h1>station</h1>
 
-<h3>Contact Form</h3>
+    <div class="container">
+      <div class="topnav">
+        <a href="/train">Train</a>
+        <a href="/employee">Employee</a>
+        <a href="/station">Station</a>
+        <a href="/ticket">Ticket</a>
+      </div>
+      <p></p>
+      <form action="/result">
+        <input type="text" id="table" name="table" value="Station" readonly>
 
-<div class="container">
-  
-  <div class="topnav">
-    <a href="/train">Train</a>
-    <a href="/employee">Employee</a>
-    <a href="/station">Station</a>
-    <a href="/ticket">Ticket</a>
-  </div>
-  <p></p>
-  <form action="/result_table">    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="id">ID *</label>
+        <input type="text" id="id" name="id" placeholder="e.g. 934" />
+        
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="e.g. Attaba" />
+        
+        <label for="location">location</label>
+        <input type="text" id="location" name="location" placeholder="e.g. Heliopolis" />
+        
 
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-    <label for="table">Table</label>
-    <select id="table" name="table">
-      <option value="train">Train</option>
-      <option value="employee">Employee</option>
-      <option value="station">Station</option>
-      <option value="ticket">Ticket</option>
-    </select>
+        <div class="radio-toolbar"  id="query">
+          <input type="radio" id="radioReq" name="req_type" value="query" />
+          <label for="radioReq">Query</label>
 
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-    
-  <p>&nbsp;</p>
-    <input type="submit" value="Submit">
-  </form>
+        </div>
+        <div class="radio-toolbar" id="post">
+
+
+          <input type="radio" id="radioInsert" name="req_type" value="insert" checked />
+          <label for="radioInsert">Insert</label>
+
+          <input type="radio" id="radioDelete" name="req_type" value="Delete" />
+          <label for="radioDelete">Delete</label>
+
+          <input type="radio" id="radioModify" name="req_type" value="Modify" />
+          <label for="radioModify">Modify</label>
+
 </div>
-
-</body>
+        </div>
+        <input type="submit" value="GO" />
+      </form>
+    </div>
+    <div class="bottom-nav">
+      <a href="/Janitor">Janitor</a>
+      <a href="/outEmp">outEmp</a>
+      <a href="/phone">phone</a>
+      <a href="/TicketMan">TicketMan</a>
+      <a href="/stationEmp">stationEmp</a>
+      <a href="/stopBy">stopBy</a>
+    </div>
+  </body>
 </html>

@@ -16,11 +16,30 @@ const employee = require('./routes/employee');
 const station = require('./routes/station');
 const ticket = require('./routes/ticket');
 
+
 app.use('/train', train);
 app.use('/employee', employee);
 app.use('/result', result);
 app.use('/station', station);
 app.use('/ticket', ticket);
+
+
+
+const janitor = require('./routes/janitor');
+const outEmp = require('./routes/outEmp');
+const phone = require('./routes/phone');
+const stationEmp = require('./routes/stationEmp');
+const stopBy = require('./routes/stopBy');
+const tikcetMan = require('./routes/ticketMan');
+
+app.use('/janitor', janitor);
+app.use('/outEmp', outEmp);
+app.use('/phone', phone);
+app.use('/stationEmp', stationEmp);
+app.use('/stopBy', stopBy);
+app.use('/TicketMan', tikcetMan);
+
+
 
 const port =  process.env.PORT || 3000;
 app.listen(port, console.log("LISTENING ON PORT : ",port));

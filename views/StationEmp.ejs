@@ -5,7 +5,8 @@
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-<h1>Ticket</h1>
+    <h1>StationEmp</h1>
+
     <div class="container">
       <div class="topnav">
         <a href="/train">Train</a>
@@ -15,18 +16,23 @@
       </div>
       <p></p>
       <form action="/result">
-        <input type="text" id="table" name="table" value="Ticket" readonly>
 
-        <label for="id">ID *</label>
-        <input type="text" id="id" name="id" placeholder="e.g. 934" />
+        <input type="text" id="table" name="table" value="StationEmp" readonly>
+
+        <label for="id">id</label>
+        <input type="text" id="id" name="id" placeholder="" />
         
-        <label for="category">Category</label>
-        <input type="text" id="category" name="category" placeholder="e.g. First" />
+     
+        <label for="emp_id">emp_id</label>
+        <input type="text" id="emp_id" name="emp_id" placeholder="" />
         
-        <label for="train_id">Train ID</label>
-        <input type="text" id="train_id" name="train_id" placeholder="e.g. 911" />
+        <label for="st_id">st_id</label>
+        <input type="text" id="st_id" name="st_id" placeholder="" />
+        <label for="shift">shift</label>
+        <input type="text" id="shift" name="shift" placeholder="" />
         
         
+
         <div class="radio-toolbar"  id="query">
           <input type="radio" id="radioReq" name="req_type" value="query" />
           <label for="radioReq">Query</label>
@@ -50,6 +56,7 @@
       </form>
     </div>
 
+    <p></p>
     <div class="bottom-nav">
       <a href="/Janitor">Janitor</a>
       <a href="/outEmp">outEmp</a>
@@ -58,5 +65,6 @@
       <a href="/stationEmp">stationEmp</a>
       <a href="/stopBy">stopBy</a>
     </div>
+    
   </body>
 </html>

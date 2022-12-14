@@ -1,49 +1,68 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="main.css">
-</head>
-<body>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <h1>Train</h1>
 
-<h3>وزارة النقل و التضامن و محبين محمد الحاج</h3>
+    <div class="container">
+      <div class="topnav">
+        <a href="/train">Train</a>
+        <a href="/employee">Employee</a>
+        <a href="/station">Station</a>
+        <a href="/ticket">Ticket</a>
+      </div>
+      <p></p>
+      <form action="/result">
+        <input type="text" id="table" name="table" value="train" readonly>
 
-<div class="container">
-  
-  <div class="topnav">
-    <a href="/train">Train</a>
-    <a href="/employee">Employee</a>
-    <a href="/station">Station</a>
-    <a href="/ticket">Ticket</a>
-  </div>
-  <p></p>
-  <form action="/result">
-    <label for="train_id">Train ID *</label>
-    <input type="text" id="train_id" name="train_id" placeholder="221B">
-    <label for="direction">Direction</label>
-    <input type="text" id="direction" name="direction" placeholder="عتبه">
-    <label for="capacity">Capacity</label>
-    <input type="text" id="capacity" name="capacity" placeholder="450">
-    <label for="manufacture">Manufacture</label>
-    <input type="text" id="manufacture" name="manufacture" placeholder="Integral Coach Factory">
+        <label for="id">Train ID *</label>
+        <input type="text" id="id" name="id" placeholder="221B" />
+        <label for="direction">Direction</label>
+        <input type="text" id="direction" name="direction" placeholder="عتبه" />
+        <label for="capacity">Capacity</label>
+        <input type="text" id="capacity" name="capacity" placeholder="450" />
+        <label for="manufacture">Manufacture</label>
+        <input type="text" id="manufacture" name="manufacture" placeholder="Integral Coach Factory" />
 
-    <label for="line">Line</label>
-    <input type="text" id="line" name="line" placeholder="1">
+        <label for="line">Line</label>
+        <input type="text" id="line" name="line" placeholder="1" />
 
-<div class="radio-toolbar">
-      <input type="radio" id="radioPost" name="req_type" value="post" checked>
-      <label for="radioPost">Post</label>
-  
-      <input type="radio" id="radioReq" name="req_type" value="query">
-      <label for="radioReq">Query</label>
-  
-  
-  
-  </div>
-    <input type="submit" value="GO">
+        <div class="radio-toolbar"  id="query">
+          <input type="radio" id="radioReq" name="req_type" value="query" />
+          <label for="radioReq">Query</label>
 
-      </form>
+        </div>
+        <div class="radio-toolbar" id="post">
+
+
+          <input type="radio" id="radioInsert" name="req_type" value="insert" checked />
+          <label for="radioInsert">Insert</label>
+
+          <input type="radio" id="radioDelete" name="req_type" value="Delete" />
+          <label for="radioDelete">Delete</label>
+
+          <input type="radio" id="radioModify" name="req_type" value="Modify" />
+          <label for="radioModify">Modify</label>
+
 </div>
+        </div>
+        <input type="submit" value="GO" />
+      </form>
+    </div>
 
-</body>
+    <p></p>
+  
+    <div class="bottom-nav">
+      <a href="/Janitor">Janitor</a>
+      <a href="/outEmp">outEmp</a>
+      <a href="/phone">phone</a>
+      <a href="/TicketMan">TicketMan</a>
+      <a href="/stationEmp">stationEmp</a>
+      <a href="/stopBy">stopBy</a>
+    </div>
+    
+  </body>
 </html>
